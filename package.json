@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-tests-production": "newman run tests/Demo.postman_collection.json -e tests/Automation.postman_environment.json -d tests/test.txt --delay-request 5000"
+    "api-tests-production": "newman run tests/Demo.postman_collection.json -e tests/Automation.postman_environment.json -d tests/test.txt --reporters json --reporter-json-export newman.json --delay-request 5000"
   },
   "author": "supraja bandi",
   "license": "ISC",
